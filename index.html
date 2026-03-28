@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Under Construction - AS & Sons</title>
+    <meta name="description" content="AS & Sons Global Services Inc. is currently building our new platform. Check back soon for exciting updates and our new look to be revealed." />
+    <meta name="keywords" content="AS & Sons, Global Services, Under Construction, Home Repair, Renovation" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#F1F5F9',       // Clean very light grayish blue
+                            card: '#FFFFFF',     // Clean white center card
+                            textDark: '#0F172A', // Very dark slate (nearly black) for harsh contrast
+                            textLight: '#64748b',// Muted text
+                            btn: '#8B0000',      // Deep red matching the logo's dark red
+                            btnHover: '#5C0000', // Darker red for hover
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-bg min-h-screen flex items-center justify-center p-4 md:p-10 lg:p-16">
+
+    <!-- The White Container Card matching the mockup -->
+    <div
+        class="bg-brand-card w-full max-w-7xl rounded-2xl shadow-2xl flex flex-col relative h-[85vh] min-h-[600px] overflow-hidden">
+
+        <!-- Header / Navbar -->
+        <header class="flex justify-between items-start px-8 pt-3 pb-6 lg:px-16 lg:pt-4 lg:pb-10">
+            <!-- Left Logo -->
+            <a href="#" class="flex">
+                <img src="dist/images/as-global-logo.jpeg" alt="AS & Sons Logo"
+                    class="w-32 md:w-48 lg:w-56 h-auto object-contain" />
+            </a>
+
+            <!-- Right Navigation -->
+            <nav class="hidden md:flex gap-8 lg:gap-12 text-[15px] font-medium text-brand-textLight">
+                <a href="#" class="hover:text-brand-textDark transition-colors">Home</a>
+                <a href="#" class="hover:text-brand-textDark transition-colors">About us</a>
+                <a href="#" class="hover:text-brand-textDark transition-colors">Work</a>
+                <a href="#" class="hover:text-brand-textDark transition-colors">Info</a>
+                <a href="mailto:info@assgservices.com"
+                    class="text-brand-textDark font-bold hover:text-brand-btn transition-colors">Contact us</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main
+            class="flex-grow flex flex-col lg:flex-row items-center justify-between px-8 lg:px-16 pb-12 lg:pb-0 h-full">
+
+            <!-- Left Column: Typography -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-center max-w-xl z-10 lg:pl-4 mb-10 lg:mb-20 animate-fade-in-up opacity-0">
+                <h1
+                    class="text-6xl md:text-7xl lg:text-[84px] font-extrabold text-brand-textDark tracking-tight leading-none mb-4">
+                    Oops!
+                </h1>
+                <h2 class="text-2xl md:text-[34px] font-bold text-brand-textDark mb-6">
+                    Under construction
+                </h2>
+
+                <p class="text-brand-textLight text-sm md:text-[15px] leading-relaxed mb-10 max-w-[380px]">
+                    We are currently building our new platform. Check back soon for exciting updates and our new look to
+                    be revealed.
+                </p>
+
+                <div>
+                    <a href="mailto:info@assgservices.com"
+                        class="inline-flex items-center justify-center px-10 py-[14px] bg-brand-btn hover:bg-brand-btnHover transition-all duration-300 transform hover:-translate-y-0.5 text-white text-xs font-bold rounded-full uppercase tracking-widest shadow-[0_8px_20px_rgba(139,0,0,0.3)]">
+                        More Info
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Generated Illustration -->
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end items-center relative h-full animate-fade-in-up opacity-0 [animation-delay:200ms]">
+                <!-- Soft background glow ring behind illustration matching reference design aesthetics -->
+                <div
+                    class="absolute opacity-60 w-[120%] h-[120%] bg-slate-100 rounded-full blur-[100px] z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                </div>
+
+                <img src="dist/images/illustration.png" alt="Construction Illustration"
+                    class="w-full max-w-[550px] object-contain relative z-10 -ml-4 lg:-ml-12 drop-shadow-sm" />
+            </div>
+
+        </main>
+
+        <!-- Subtle Abstract Vector Lines in Background -->
+        <svg class="absolute bottom-0 left-0 w-full h-full pointer-events-none opacity-[0.03] text-black z-0"
+            viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path d="M0,1000 C300,800 600,1200 1000,600" fill="none" stroke="currentColor" stroke-width="2" />
+        </svg>
+    </div>
+
+</body>
+
+</html>
